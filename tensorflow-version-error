@@ -1,0 +1,5 @@
+텐서플로우 버전문제로 2.0 버전일때는 “module &#39;tensorflow&#39; has no attribute &#39;’***&#39;”
+에러가 뜰수 잇으니 tensorflow import 시 아래 구문 추가
+
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
